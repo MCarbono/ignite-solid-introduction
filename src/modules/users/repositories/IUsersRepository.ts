@@ -11,6 +11,7 @@ interface IUsersRepository {
   findByEmail(email: string): User | undefined;
   turnAdmin(user: User): User;
   list(): User[];
+  verifyAdmin(user_id: string): Boolean;
 }
 
 export { IUsersRepository, ICreateUserDTO };
